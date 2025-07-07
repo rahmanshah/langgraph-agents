@@ -6,3 +6,4 @@ python-dotenv
 ipykernel
 langchain_core
 langchain_groq
+langgraph-cli[inmem]
