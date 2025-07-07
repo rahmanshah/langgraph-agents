@@ -17,7 +17,7 @@ def run_agent_reasoning(state: MessagesState) -> MessagesState:
     The LLM's response is the single message in the returned MessagesState.
     """
 
-    response = llm.invoke([{"role": "system","content": SYSTEM_MESSAGE}, *state.messages])
+    response = llm.invoke([{"role": "system","content": SYSTEM_MESSAGE}, *state["messages"]])
     return {'messages': [response]}
 
 

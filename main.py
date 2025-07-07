@@ -51,3 +51,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    response = app.invoke({"messages": [HumanMessage(content="what is the temperature in Helsinki today in celsius and then triple it")]})
+    print(response['messages'][LAST].content)
