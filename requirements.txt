@@ -11,3 +11,6 @@ langgraph
 dotenv
 gradio
 ipywidgets
+langchain_community
+duckduckgo-search
+ddgs
